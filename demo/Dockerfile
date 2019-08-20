@@ -2,7 +2,7 @@ FROM ruby:2.6.3-slim
 
 RUN apt-get update -y && \
     apt-get dist-upgrade -y && \
-    apt-get install gnupg2 git gcc make --no-install-recommends -y
+    apt-get install gnupg2 git gcc make libsqlite3-dev --no-install-recommends -y
 
 RUN apt-get autoremove -y && \
     apt-get clean -y && \
