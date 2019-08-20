@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  rails:
+    image: 'demo_rails'
+    container_name: demo_rails
+    restart: unless-stopped
+
+  loki:
+    image: 'grafana/loki:v0.3.0'
+    container_name: demo_loki
+    restart: unless-stopped
